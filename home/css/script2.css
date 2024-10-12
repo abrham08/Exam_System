@@ -1,0 +1,33 @@
+.tab-header {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.btn {
+  position: relative;
+  top: 1px;
+  border: none;
+  outline: none;
+  padding: 0.5rem 2rem;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.btn.active {
+  border: 1px solid #ccc;
+  background-color:rgb(64,170,200);
+  border-bottom-color: #fff;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab-body {
+  padding: 0.5rem 1rem;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}

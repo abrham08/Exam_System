@@ -1,0 +1,38 @@
+  .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            z-index: 9999;
+        }
+
+        .preloader .spinner-border {
+            margin-bottom: 0;
+        }
+
+        .preloader-hidden {
+            display: none;
+        }
+        body {
+            height: 100%;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        .footer a {
+            color: white;
+        }
+        
+      

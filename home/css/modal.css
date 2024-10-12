@@ -1,0 +1,11 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 992px;
+  margin: 0 auto;
+}
+.modal-dialog{
+	margin-top:1px;
+}

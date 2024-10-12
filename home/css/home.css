@@ -1,0 +1,146 @@
+ /*---booking form start---*/
+ .image_slider{
+   text-align: center;
+ }
+ .image_slider img{
+   width: 600px;
+   height: 350px;
+   
+   margin-top: 5px;
+ }
+ .booking-form .form2{
+   display: flex;
+   flex-direction: row;
+   margin-left: 10%;
+ }
+ .booking-form{
+    text-align: center;
+    margin-top:15px; 
+    background-color: rgb(66, 65, 65);
+    color: white;
+    height: 100px;
+    width: 100%;
+
+    padding-top: 15px;
+    
+}
+
+.booking-form .form2 input{
+    height: 50px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    background: white;
+}
+.booking-form .form2 input[type="submit"]{
+  background: #7fc142;
+  color: #fff;
+}
+.booking-form .form2 input[type="submit"]:hover{
+    background: #54802c;
+    color: #fff;
+    transition: 0.66s;
+    
+  }
+   /*---booking form end---*/
+ /*------image slider start----*/
+ .Section_top{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: url(image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  animation: change 10s infinite ease-in-out;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+
+}
+.content h1{
+  color: rgb(35, 192, 240);
+  font-size: 60px;
+  letter-spacing: 15px;
+}
+.content h1 span{
+  color: #111;
+}
+.content a{
+  background: #85c1ee;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.content a:hover{
+  background: #034e88;
+  color: #fff;
+}
+@keyframes change{
+  0%
+  {
+      background-image: url(images/8.jpg);
+  }
+  25%
+  {
+      background-image: url(images/10.jpg);
+  }
+  50%
+  {
+      background-image: url(iimages/3.jpg);
+  }
+  100%
+  {
+      background-image: url(images/4.jpg);
+  }
+
+}
+ /*------image slider end----*/
+ /*-----responsive scree-----*/
+ @media screen and (max-width: 768px) {
+  .booking-form{
+    text-align: center;
+    margin-top:15px; 
+    background-color: rgb(66, 65, 65);
+    color: white;
+    height: 450px;
+    width: 100%;
+
+    padding-top: 15px;
+    
+}
+.booking-form .form2{
+  float: none;
+                                    
+  z-index: 9;
+  left: 0;
+  right: 0;
+ top: 100px;
+ bottom: 100%;
+  width: auto;
+       height: auto;
+        flex-direction: column;
+      justify-content: space-evenly;
+     background: none;
+}
+.booking-form .form2 input{
+  margin-top: 5px;
+  background: white;
+  width: 200px;
+}
+
+
+ }

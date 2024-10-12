@@ -1,0 +1,45 @@
+.textuarea{
+    width: 100%; 
+    height: auto;
+    resize: none;
+    overflow: hidden;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-align: left;
+    margin-left: 0px;
+}
+div.choicedisable textarea {
+
+   
+    padding: 5px; 
+  }
+
+  .no-border {
+    border: none;
+  }
+  
+  .disabled {
+    pointer-events: none;
+    color: black;
+  }
+.border{
+    box-shadow: inset 0 0 0 1px rgb(179, 50, 50); 
+    padding: 5px;
+}
+div.editbtns{
+    visibility: hidden;
+}
+.textareas-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .your_element {
+    cursor: text;
+  }
+  
+  

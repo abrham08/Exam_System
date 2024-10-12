@@ -1,0 +1,330 @@
+
+:root {
+    --width: 770px;
+    --height: auto;
+    --maincolor: #ED4264;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    text-align: left;
+}
+
+body {
+    background: #fff;
+
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    padding: 10px 0;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.title {
+    display: block;
+    margin: 0 0 3px;
+    text-align: center;
+    color: #000;
+}
+
+h1 {
+    font-size: 25px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.slider {
+    width: var(--width);
+    text-align: center;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+
+.slider>.links {
+
+	margin-top:5px;
+}
+
+.slides {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slides>div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: var(--width);
+    height: var(--height);
+    margin-right: 50px;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    padding: 30px;
+}
+
+.titleblock {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: rgb(70,130,180);
+    text-transform: uppercase;
+}
+
+table th {
+    vertical-align: top;
+}
+
+table th div {
+    display: block;
+    text-transform: uppercase;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}
+
+table td {
+    white-space: nowrap;
+}
+
+
+
+select,
+input {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    background: #e1e1e1;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    resize: none;
+	decoration:none;
+}
+.big{
+	font-size:20px;
+}
+textarea{
+	color:black;
+	font-family: 'Poppins', sans-serif;
+    display: block;
+    background: #e1e1e1;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size:70;
+    resize: none;
+	decoration:none;
+}
+
+input:hover,
+input:focus,
+select:hover,
+select:focus,
+textarea:hover,
+textarea:focus {
+    background: #dbdbdb;
+}
+
+textarea,
+input {
+    margin-bottom: 15px;
+}
+
+
+.btnWrapper {
+    display: inline-flex;
+}
+
+.btnblock {
+    display: flex;
+}
+
+.txtScore {
+    margin: 80px 0;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.btnQuiz,
+.btnSubmit,
+button {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding: 15px;
+    opacity: 0.9;
+    outline: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    margin: 2px 0 0;
+}
+
+.btnSubmit {
+    width: 150px;
+	background-color:rgb(0,191,255);
+	border-radius:5px;
+	margin-left:300px;
+	margin-top:5px;
+}
+
+.btnSubmit:hover{
+	background-color:rgb(30,144,255);
+}
+.btnQuiz,
+.btnSubmit,
+button:hover {
+    opacity: 1;
+}
+
+.titleblock,
+table th div,
+.btnSubmit,
+.btnQuiz,
+button {
+   
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btnWrapper {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.btnHalf {
+    width: 50%;
+}
+
+.btnQuiz {
+    background: #2196f3;
+}
+
+.wrapper {
+    background: #fff;
+    width: 300px;
+    border: none;
+	decoration:none;
+    padding: 10px;
+    display: block;
+}
+
+.wrapper .option {
+    background: #fff;
+    width: 100%;
+	text-decoration:none;
+    border: none;
+    cursor: pointer;
+    border: 2px solid lightgrey;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .option:last-child {
+    margin-bottom: 0;
+	
+}
+.wrapper .option{
+	border: none;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.wrapper .option span {
+    display: inline-block;
+    font-size: 18px;
+	text-decoration:none;
+	border: none;
+    color: black;
+    width: calc(100% - 32px);
+    white-space: nowrap;
+}
+
+.message {
+    position: fixed;
+    top: 20px;
+    left: calc(50% - 200px);
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    -webkit-animation: cssAnimation 0s ease-in 4s forwards;
+    animation: cssAnimation 0s ease-in 4s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    color: #fff;
+}
+
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+        padding: 0;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+        padding: 0;
+    }
+}
+
+.message.update {
+    background: #ffc107;
+    color: #000;
+}
+
+.message.save {
+    background: #4caf50;
+}
+
+.message.error {
+    background: #f44336;
+}

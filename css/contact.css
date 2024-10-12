@@ -1,0 +1,75 @@
+.map{
+    text-align: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+
+}
+.division{
+    width: 48%;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.cform input{
+    width: 400px;
+    height: 40px;
+    border: 2px solid rgb(32, 108, 170);
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 15px;
+  
+}
+.contact button{
+    border: none;
+    text-decoration: none;
+    background: rgb(53, 182, 53);
+    color: white;
+    width: 100px;
+    padding: 5px;
+    height: 30px;
+    border-radius: 10px;
+}
+.contact a{
+    text-decoration: none;
+    background: rgb(53, 182, 53);
+    color: white;
+    width: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+.contact button:hover{
+    transition: 0.5s;
+    background:rgb(37, 121, 37) ;
+}
+.contact a:hover{
+    background:rgb(37, 121, 37) ;
+}
+.cform input[type="text-area"]{
+    height: 150px;
+    text-align: start;
+}
+@media screen and (max-width: 768px) {
+    .division{
+        width: 48%;
+        margin-left: 0;
+        overflow: hidden;
+        float: none;
+                                    
+        z-index: 9;
+        left: 0;
+        right: 0;
+       top: 100px;
+       bottom: 100%;
+        width: auto;
+             height: auto;
+              flex-direction: column;
+            justify-content: space-evenly;
+           background: none;
+    }
+}

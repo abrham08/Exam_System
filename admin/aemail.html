@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Teacher Assignment Notification</title>
+  <style>
+    /* CSS styles for the email template */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      color: #333333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #007BFF;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .course-name {
+      font-weight: bold;
+    }
+
+    .examiner-message {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Teacher Assignment Notification</h1>
+    <p>Dear [{{ $tit }} {{ $fname }} {{ $mname }}],</p>
+    <p>Congratulations! You have been assigned as an examiner for the {{ $course }} course:</p>
+
+    <p class="course-name">Department: [{{ $Department }}]</p>
+    <p class="course-name">Course: [{{ $course }}]</p>
+    <p class="course-name">Stream: [{{ $stream }}]</p>
+    <p class="course-name">Time: [{{ $time }}]</p>
+
+    <div class="examiner-message">
+      <p>As an examiner, your responsibilities will include conducting exams and providing guidance to the students enrolled in this course.</p>
+      <p>If you have any questions or require further information, please feel free to contact us.</p>
+    </div>
+
+    <p>Thank you for your dedication and contribution to our institution.</p>
+    <p>Best regards,</p>
+    <p>{{ $hfname }} {{ $hmname }}</p>
+  </div>
+</body>
+
+</html>
